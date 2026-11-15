@@ -2,7 +2,7 @@ Feature: Add prooduct
 
 Scenario:  Add product to cart 
 
-Given Navigate to Walmart homepage 
+Given Navigate to snapdeal homepage 
 When User Select the Departments dropdown 
 When Hover on Toys & Outdoor Play
 And Select All Toys & Outdoor Play
