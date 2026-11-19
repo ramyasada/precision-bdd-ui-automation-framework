@@ -1,0 +1,1 @@
+[{"uid":"b84c3fd3ab720fea","name":"Add product to cart","time":{"start":1795074317296,"stop":1795074331736,"duration":14440},"status":"passed","severity":"normal"},{"uid":"41117c211cc1268e","name":"Search for iPhone using search bar","time":{"start":1795074308679,"stop":1795074317279,"duration":8600},"status":"passed","severity":"normal"}]

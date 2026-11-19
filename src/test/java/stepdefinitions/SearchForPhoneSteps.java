@@ -17,7 +17,7 @@ public class SearchForPhoneSteps {
 	private Logger logger = LogsFactory.getLogger(SearchForPhoneSteps.class);
 	private SearchMobilePage s;
 	private WebDriver driver;
-		@Given("User Navigate to Walmart homepage")
+		@Given("User Navigate to snapdeal homepage")
 		public void navigateToPage() {
 			
 		    logger.info("navigating to the webpage");

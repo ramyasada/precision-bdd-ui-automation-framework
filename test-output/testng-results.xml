@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-11-15T21:15:51 IST" name="Suite" finished-at="2026-11-15T21:16:09 IST" duration-ms="17922">
+  <suite started-at="2026-11-19T13:13:09 IST" name="Suite" finished-at="2026-11-19T13:13:32 IST" duration-ms="23293">
     <groups>
       <group name="cucumber">
         <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@2c5529ab]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2026-11-15T21:15:51 IST" name="UI-Test" finished-at="2026-11-15T21:16:09 IST" duration-ms="17922">
+    <test started-at="2026-11-19T13:13:09 IST" name="UI-Test" finished-at="2026-11-19T13:13:32 IST" duration-ms="23293">
       <class name="runners.TestRunner">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runners.TestRunner@2c5529ab]" started-at="2026-11-15T21:15:51 IST" name="setUpClass" finished-at="2026-11-15T21:15:52 IST" duration-ms="552" status="PASS">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runners.TestRunner@2c5529ab]" started-at="2026-11-19T13:13:09 IST" name="setUpClass" finished-at="2026-11-19T13:13:09 IST" duration-ms="686" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@44f0ff2b]]>
+                <![CDATA[org.testng.TestRunner@6f85ee02]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@2c5529ab]" started-at="2026-11-15T21:15:52 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-11-15T21:16:03 IST" duration-ms="11252" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@2c5529ab]" started-at="2026-11-19T13:13:09 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-11-19T13:13:19 IST" duration-ms="10007" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -37,7 +37,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@2c5529ab]" started-at="2026-11-15T21:16:03 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-11-15T21:16:09 IST" duration-ms="5970" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@2c5529ab]" started-at="2026-11-19T13:13:19 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-11-19T13:13:32 IST" duration-ms="12517" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -50,106 +50,10 @@
               </value>
             </param>
           </params>
-          <exception class="io.cucumber.testng.UndefinedStepException">
-            <message>
-              <![CDATA[The step 'Navigate to Walmart homepage' and 7 other step(s) are undefined.
-You can implement these steps using the snippet(s) below:
-
-@Given("Navigate to Walmart homepage")
-public void navigate_to_walmart_homepage() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("User Select the Departments dropdown")
-public void user_select_the_departments_dropdown() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("Hover on Toys & Outdoor Play")
-public void hover_on_toys_outdoor_play() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("Select All Toys & Outdoor Play")
-public void select_all_toys_outdoor_play() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("user Select any product")
-public void user_select_any_product() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Then("Ensure that we are on correct product details page")
-public void ensure_that_we_are_on_correct_product_details_page() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("Click on Add to cart")
-public void click_on_add_to_cart() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Then("Ensure the correct product is added to cart")
-public void ensure_the_correct_product_is_added_to_cart() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[io.cucumber.testng.UndefinedStepException: The step 'Navigate to Walmart homepage' and 7 other step(s) are undefined.
-You can implement these steps using the snippet(s) below:
-
-@Given("Navigate to Walmart homepage")
-public void navigate_to_walmart_homepage() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("User Select the Departments dropdown")
-public void user_select_the_departments_dropdown() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("Hover on Toys & Outdoor Play")
-public void hover_on_toys_outdoor_play() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("Select All Toys & Outdoor Play")
-public void select_all_toys_outdoor_play() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("user Select any product")
-public void user_select_any_product() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Then("Ensure that we are on correct product details page")
-public void ensure_that_we_are_on_correct_product_details_page() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("Click on Add to cart")
-public void click_on_add_to_cart() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Then("Ensure the correct product is added to cart")
-public void ensure_the_correct_product_is_added_to_cart() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-at ✽.Navigate to Walmart homepage(file:///D:/eclipse_folder/precision-ui-bdd-automation-framework/src/test/resources/features/f2_AddProduct.feature:5)
-]]>
-            </full-stacktrace>
-          </exception> <!-- io.cucumber.testng.UndefinedStepException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runners.TestRunner@2c5529ab]" started-at="2026-11-15T21:16:09 IST" name="tearDownClass" finished-at="2026-11-15T21:16:09 IST" duration-ms="100" status="PASS">
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runners.TestRunner@2c5529ab]" started-at="2026-11-19T13:13:32 IST" name="tearDownClass" finished-at="2026-11-19T13:13:32 IST" duration-ms="37" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->

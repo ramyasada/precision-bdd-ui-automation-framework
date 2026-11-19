@@ -12,6 +12,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class SearchMobilePage {
 	private WebDriver driver;
+	private WebDriverWait wait;
 	public SearchMobilePage(WebDriver driver)
 	{
 		this.driver=driver;
@@ -23,14 +24,14 @@ public class SearchMobilePage {
 	public void searchForphone(String s) 
 	{
 		
-		WebDriverWait wait=new WebDriverWait(driver,Duration.ofSeconds(20));
+		 wait=new WebDriverWait(driver,Duration.ofSeconds(20));
 		WebElement searchBox=wait.until(ExpectedConditions.elementToBeClickable(searchInput));
 
 		searchBox.sendKeys(s);
 	}
 	public void clickOnFirstSuggestion() 
 	{
-		 WebDriverWait wait=new WebDriverWait(driver,Duration.ofSeconds(10));
+		  wait=new WebDriverWait(driver,Duration.ofSeconds(10));
 		 wait.until(ExpectedConditions.visibilityOfElementLocated(firstSuggestion));
 		 driver.findElement(firstSuggestion).click();   
 		
