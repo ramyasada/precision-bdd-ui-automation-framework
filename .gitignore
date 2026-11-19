@@ -1,1 +1,21 @@
-/target/
+.classpath
+.project
+.settings/
+.metadata/
+
+# Test execution files
+**/test-output/
+**/target/
+**/bin/
+
+# Allure reports and results
+allure-report/
+allure-results/
+**/allure-report/
+**/allure-results/
+
+# Allure configuration
+.allure/
+
+# Logs
+*.log
