@@ -1,5 +1,11 @@
-/target/
 .classpath
 .project
 .settings/
 .metadata/
+
+**/test-output/
+**/target/
+**/bin/
+
+
+.allure
