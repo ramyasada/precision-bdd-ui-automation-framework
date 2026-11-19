@@ -27,11 +27,11 @@ public class DriverFactory {
 		}
 		switch(browser.toLowerCase()) {
 			case "chrome":
-				WebDriverManager.chromedriver().setup();
+				
 				driver = new ChromeDriver(OptionsFactory.buildChromeOptions());							
 				break;
 			case "edge":
-				WebDriverManager.edgedriver().setup();
+				
 				driver = new EdgeDriver(OptionsFactory.buildEdgeOptions());
 				break;
 			default:

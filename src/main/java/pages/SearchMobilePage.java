@@ -9,10 +9,10 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-
+import utils.WaitUtil;
 public class SearchMobilePage {
 	private WebDriver driver;
-	private WebDriverWait wait;
+	
 	public SearchMobilePage(WebDriver driver)
 	{
 		this.driver=driver;
@@ -23,16 +23,12 @@ public class SearchMobilePage {
 	private By products=By.cssSelector("div.product-tuple-listing");
 	public void searchForphone(String s) 
 	{
-		
-		 wait=new WebDriverWait(driver,Duration.ofSeconds(20));
-		WebElement searchBox=wait.until(ExpectedConditions.elementToBeClickable(searchInput));
-
+		WebElement searchBox=WaitUtil.getWebDriverWait(20).until(ExpectedConditions.elementToBeClickable(searchInput));
 		searchBox.sendKeys(s);
 	}
 	public void clickOnFirstSuggestion() 
 	{
-		  wait=new WebDriverWait(driver,Duration.ofSeconds(10));
-		 wait.until(ExpectedConditions.visibilityOfElementLocated(firstSuggestion));
+		  WaitUtil.getWebDriverWait(10).until(ExpectedConditions.visibilityOfElementLocated(firstSuggestion));
 		 driver.findElement(firstSuggestion).click();   
 		
 	}
@@ -48,9 +44,7 @@ public class SearchMobilePage {
 		{
 			if(p.getText().toLowerCase().contains("iphone"))
 				return true;
-			
 		}
-
 		return false;
 	}
 }

@@ -8,9 +8,10 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import utils.WaitUtil;
+
 public class ProductPage {
 	private WebDriver driver;
-	private WebDriverWait wait;
 	public ProductPage(WebDriver driver)
 	{
 		this.driver=driver;
@@ -46,12 +47,7 @@ public class ProductPage {
 	}
 	public boolean validatePageDisplayed()
 	{
-	    wait=new WebDriverWait(driver,Duration.ofSeconds(20));
-
-	    WebElement product=wait.until(
-	        ExpectedConditions.visibilityOfElementLocated(checkPage)
-	    );
-
+		WebElement product=WaitUtil.getWebDriverWait(20).until(ExpectedConditions.visibilityOfElementLocated(checkPage));
 	    return product.isDisplayed();
 	}
 	public String getProductName()

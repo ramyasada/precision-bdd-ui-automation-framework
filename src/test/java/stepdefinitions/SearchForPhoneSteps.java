@@ -26,13 +26,15 @@ public class SearchForPhoneSteps {
 		}
 
 		@When("Search for iPhone in the search bar")
-		public void clickSearch() throws InterruptedException {
+		public void clickSearch() 
+		{
 		    logger.info("user click on the search button");
 		    s.searchForphone(ConfigReader.getProperty("mobile_name"));
 		}
 
 		@When("Click on first suggestion")
-		public void click1stuggestion() throws InterruptedException {
+		public void click1stuggestion() 
+		{
 		    logger.info("clicking on the 1st suggestion");
 		    s.clickOnFirstSuggestion();
 		}

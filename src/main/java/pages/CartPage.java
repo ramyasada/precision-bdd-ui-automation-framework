@@ -7,14 +7,12 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
-
+import utils.WaitUtil;
 public class CartPage {
 
     private WebDriver driver;
-    private WebDriverWait wait;
     public CartPage(WebDriver driver) {
         this.driver=driver;
-        this.wait=new WebDriverWait(driver,Duration.ofSeconds(10));
     }
     private By cartIcon=By.xpath("//i[@class='sd-icon sd-icon-cart-icon-white-2']");
     private By productNameInCart=By.xpath("//a[@title=\"ASIAN HENRY-04cBRNBEIG Brown Boy's Sandals\"]");
