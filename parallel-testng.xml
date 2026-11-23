@@ -3,7 +3,7 @@
 <suite name="Suite" parallel="methods" thread-count="5">
   <test name="TestRunner">
   	<classes>
-  		<class name="com.automationexercise.ui.runners.ParallelTestRunner"></class>
+  		<class name="runners.ParallelTestRunner"></class>
   	</classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
